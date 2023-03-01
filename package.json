@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host",
-    "build": "vue-tsc && vite build",
+    "build": "./scripts/v.sh ; vue-tsc && vite build",
     "preview": "vite preview --port 5050",
     "fix": "rome check . --apply-suggested && rome format . --write && which refresh 2>/dev/null && refresh || echo -n",
     "lint": "rome check . ; rome format ."
